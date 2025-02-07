@@ -19,8 +19,8 @@ Websites:
 export const projectsData = [
   {
     id: 1,
-    name: "Guvi - Cleaning House",
-    description: "Application provide cleaning house services",
+    name: "Guvi",
+    description: "Application provide cleaning house services. With more over 200.000 download in both App Store and Google Play.",
     date: "2022-08-20",
     demoLink: "https://qr.guvico.com",
   },
@@ -37,31 +37,39 @@ export const BtnList = [
   { label: "Home", link: "/", icon: "home", newTab: false },
   { label: "About", link: "/about", icon: "about", newTab: false },
   { label: "Projects", link: "/projects", icon: "projects", newTab: false },
-  { label: "Contact", link: "/contact", icon: "contact", newTab: false },
+  { label: "Zalo", link: "https://zalo.me/0328374810", icon: "contact", newTab: true },
   {
     label: "Github",
-    link: "https://www.github.com/codebucks27",
+    link: "https://github.com/truongnl-d",
     icon: "github",
     newTab: true,
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
     icon: "linkedin",
     newTab: true,
   },
   {
-    label: "X",
-    link: "https://www.x.com/code_bucks",
-    icon: "twitter",
-    newTab: true,
-  },
-  {
     label: "Resume",
-    link: "/resume.pdf",
+    link: "/resume1.pdf",
     icon: "resume",
     newTab: true,
   },
 ];
 
 
+export const BtnListContact = [
+  {
+    label: "Zalo",
+    link: "https://zalo.me/0328374810",
+    icon: "zalo",
+    newTab: true,
+  },
+  {
+    label: "Facebook",
+    link: "https://www.facebook.com/lienminh.thich.1/",
+    icon: "facebook",
+    newTab: true,
+  },
+]

@@ -4,6 +4,9 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "sonner";
 import { motion } from "framer-motion";
+import { Home } from "lucide-react";
+import NavButton from "../navigation/NavButton";
+import { BtnList, BtnListContact } from "@/app/data";
 
 const container = {
   hidden: { opacity: 0 },
@@ -86,15 +89,28 @@ export default function Form() {
 
   return (
     <>
-      <Toaster richColors={true} />
-      <motion.form
+    {/* {BtnListContact.map((btn, index) => {
+                const angleRad = (index * angleIncrement * Math.PI) / 180;
+                const radius = isLarge
+                  ? "calc(20vw - 1rem)"
+                  : isMedium
+                  ? "calc(30vw - 1rem)"
+                  : "calc(40vw - 1rem)";
+                const x = `calc(${radius}*${Math.cos(angleRad)})`;
+                const y = `calc(${radius}*${Math.sin(angleRad)})`;
+
+                return <NavButton key={btn.label} x={x} y={y} {...btn} />;
+              })} */}
+      {/* <Toaster richColors={true} /> */}
+      {/* <motion.form
         variants={container}
         initial="hidden"
         animate="show"
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-md w-full flex flex-col items-center justify-center space-y-4"
-      >
-        <motion.input
+      > */}
+    
+        {/* <motion.input
           variants={item}
           type="text"
           placeholder="name"
@@ -153,8 +169,8 @@ export default function Form() {
       hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize
       "
           type="submit"
-        />
-      </motion.form>
+        /> */}
+      {/* </motion.form> */}
     </>
   );
 }

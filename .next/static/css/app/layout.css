@@ -706,6 +706,9 @@ video {
 .mr-2 {
   margin-right: 0.5rem;
 }
+.mr-10 {
+  margin-right: 2.5rem;
+}
 .inline-block {
   display: inline-block;
 }
